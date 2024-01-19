@@ -7,9 +7,7 @@ const store = useNavItemsStore;
 <template>
     <nav class = "navbar navbar--style" aria-label="primary">
         <div class = "navbar__element">
-          <div class = "navbar__element navbar__element--burger"><i class="fa fa-bars"></i>
-          <div class = "navbar__element navbar__element--cross" ><i class="fa fa-x"></i></div>
-        </div>
+          <div class = "navbar__element navbar__element--burger"><i class="fa fa-bars"></i></div>
         <ul id = "menu" class = "navbar__list navbar__list--style">
           <NavItem
             v-for="(item) in store.getMenu()"
@@ -117,28 +115,8 @@ const store = useNavItemsStore;
     display: none;
   }
 }
-.navbar__element--cross {
-  color: var(--dark);
-  display: block;
-  position: fixed;
-  top: 4%;
-  z-index: 2000;
-  margin-right: 2%;
-  font-size: 3rem;
-  display: none;
-}
-
-@media (min-width: 768px) {
-  .navbar__element--cross {
-    display: none;
-  }
-}
 
 .navbar__element:hover .navbar__list {
-  display: flex;
-}
-
-.navbar__element:hover .navbar__element--cross {
   display: flex;
 }
 </style>

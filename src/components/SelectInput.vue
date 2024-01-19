@@ -14,7 +14,7 @@ defineProps({
     required: true
     },
     selectId: {
-    type: Number,
+    type: String,
     required: true
     },
     options: {
