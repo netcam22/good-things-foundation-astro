@@ -12,7 +12,7 @@ defineProps({
 </script>
 
 <template>
-<li class = "navbar__item" ><RouterLink :to="{name: name}">{{title}}</RouterLink></li>
+<li class = "navbar__item" ><a :href="name">{{title}}</a></li>
 </template>
 
 <style scoped>
