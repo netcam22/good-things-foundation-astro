@@ -4,7 +4,10 @@
 
 <template>
   <form class = 'search-form'>
-      <label class = 'search-form__icon' for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
+      <label class = 'search-form__icon' for="search">
+        <i title = "search" aria-hidden="true" class="fa-solid fa-magnifying-glass"></i>
+        <span class="sr-only">Search input field</span>
+      </label>
     <input class = 'search-form__input' type="search" id="search" name="search" placeholder="Search">
   </form>
 </template>
