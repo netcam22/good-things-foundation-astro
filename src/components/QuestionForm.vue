@@ -5,9 +5,9 @@ const store = useQuestionFormStore;
 </script>
 
 <template>
-          <form :class="store.getFormClass" :id="store.getFormId">
+          <form :class="store.getFormClass()" :id="store.getFormId()">
             <SelectInput 
-            v-for="(item) in store.getSelectBoxes"
+            v-for="(item) in store.getSelectBoxes()"
             :key="item.id"
             :labelClass="item.labelClass"
             :label="item.label"
@@ -15,7 +15,7 @@ const store = useQuestionFormStore;
             :selectId="item.selectId" 
             :options="item.options"
           />
-            <button :class="store.getButtonClass" type="button">{{ store.getButtonText() }}</button>
+            <button :class="store.getButtonClass()" type="button">{{ store.getButtonText() }}</button>
           </form>
 </template>
 

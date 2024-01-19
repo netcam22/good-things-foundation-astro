@@ -9,7 +9,7 @@ import QuestionForm from './QuestionForm.vue';
   
           <h1 class = "question-box__heading" :id="store.getAriaLabel">{{store.getHeading()}}</h1>
           <p class = "question-box__text">
-            {{store.getText}}
+            {{store.getText()}}
           </p>
 
           <QuestionForm/>
