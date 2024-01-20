@@ -9,6 +9,7 @@ defineProps({
     required: true
     }
 })
+console.log(title);
 </script>
 
 <template>
