@@ -8,7 +8,7 @@ async function handleRequest(request) {
     const randomFact = factDetails.fact;
     const pageResponse = await fetch(request);
     const pageBody = await pageResponse.text();
-    const updatedBody = pageBody.replace("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", randomFact);
+    const updatedBody = pageBody.replace("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", randomFact);
     return new Response(updatedBody, {
         headers: pageResponse.headers,
         status: pageResponse.status,
