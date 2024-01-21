@@ -16,6 +16,11 @@ defineProps({
 </template>
 
 <style scoped>
+
+.navbar__item {
+    margin: 0;
+    padding: 0;
+}
 .navbar__item a {
     text-decoration: none;
     font-size: 2rem;
