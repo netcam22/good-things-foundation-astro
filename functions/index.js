@@ -7,7 +7,7 @@ async function handleRequest(context) {
     const factDetails = await catResponse.json();
     const randomFact = factDetails.fact;
     const url = new URL(context.request.url);
-    const asset = await context.env.ASSETS.fetch(context.request.url);
+    const asset = await context.env.ASSETS.fetch(url);
     const assetText = await asset.text();
     const newAssetText = assetText.replace("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", randomFact);
     return new Response(newAssetText, asset);
