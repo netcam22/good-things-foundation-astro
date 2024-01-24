@@ -17,6 +17,6 @@
     "vue": "^3.4.15"
   },
   "devDependencies": {
-    "wrangler": "^3.23.0"
+    "wrangler": "^3.24.0"
   }
 }
