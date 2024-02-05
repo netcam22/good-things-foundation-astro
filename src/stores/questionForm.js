@@ -6,8 +6,8 @@ export const useQuestionFormStore = (function () {
       {id: 1, labelClass: "question-box__label", label: "I am",
       selectClass: "question-box__select", selectId: "i-am", 
       options: [{value: "individual", text: "an individual"},
-      {value: "organisation", text: "a group"},
-      {value: "group", text: "an individual"},
+      {value: "group", text: "a group"},
+      {value: "organisation", text: "an organisation"},
       {value: "journalist", text: "a journalist"}]},
 
       {id: 2, labelClass: "question-box__label", label: "and I want",
