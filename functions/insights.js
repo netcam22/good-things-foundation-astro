@@ -6,6 +6,7 @@ async function handleRequest(context) {
     const catResponse = await fetch("https://catfact.ninja/fact");
     const factDetails = await catResponse.json();
     const randomFact = factDetails.fact;
+    console.log(randomFact);
     const url = new URL(context.request.url);
     const asset = await context.env.ASSETS.fetch(url);
     const assetText = await asset.text();
